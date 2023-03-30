@@ -1,0 +1,1 @@
+('Szerkeszthető!,', '\n', 'Kerület: ', 12, 'cm.', '\n', 'Terület', 6.0, 'cm²', '\n', 'Beleirható kör sugara: ', ('Nincs belső köre mivel ez egy derékszögű háromszög és azoknál csak köré lehet irni',))
