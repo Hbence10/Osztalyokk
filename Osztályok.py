@@ -41,7 +41,7 @@ háromszög.a = (int(input("A oldal:")))
 háromszög.b = (int(input("B oldal:")))
 háromszög.c = (int(input("C oldal:")))
 
-f = open("eredmény.txt","w")
+f = open("eredmény.txt","w", encoding="UTF-8")
 
 Lista = []
 for i in range(1):
@@ -50,6 +50,13 @@ for i in range(1):
 
 új = []
 for i in Lista[0]:
-    új.append(str(i))
+    új.append((i))
+
+print(új)
+kerület = új[1]
 
 
+if kerület > 0:
+    f.write("Szerkeszthető" +"\n"+ str(új[1]) + "\n" + str(új[2]) + "\n" + str(új[3]))
+else:
+    f.write("Nem szerkeszthető")
