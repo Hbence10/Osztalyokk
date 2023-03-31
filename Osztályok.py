@@ -28,7 +28,7 @@ class Háromszög():
     
     def szerk(self):
         if self.a + self.b > self.c and self.a +self.c > self.b and self.c + self.b > self.a :
-            return "Szerkeszthető!,","\n", "Kerület: ", Háromszög.ker(self),"cm.","\n", "Terület", Háromszög.ter(self), "cm²","\n", "Beleirható kör sugara: ", (Háromszög.kör(self),)
+            return "Szerkeszthető!", Háromszög.ker(self), Háromszög.ter(self), Háromszög.kör(self)
         else:
             return "Nem szerkeszthető igy nincs semmije."                                                        
 f = open("eredmény.txt","w",encoding="UTF-8")   
@@ -41,4 +41,15 @@ háromszög.a = (int(input("A oldal:")))
 háromszög.b = (int(input("B oldal:")))
 háromszög.c = (int(input("C oldal:")))
 
-f.write(str(háromszög.szerk()))
+f = open("eredmény.txt","w")
+
+Lista = []
+for i in range(1):
+    iratás = háromszög.szerk()
+    Lista.append(iratás)
+
+új = []
+for i in Lista[0]:
+    új.append(str(i))
+
+
