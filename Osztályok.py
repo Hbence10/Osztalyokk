@@ -24,13 +24,19 @@ class Háromszög():
     
         elif (self.a**2 + self.b**2) != self.c **2:
             r = 2*Háromszög.ter(self) / (self.a + self.b + self.c)
-            return round(r,2),"cm"
+            return "A belső kör sugara: ", round(r,2),
+    
+    def nemszerk(self):
+        return "Nem Szerkeszthető"
     
     def szerk(self):
+        
         if self.a + self.b > self.c and self.a +self.c > self.b and self.c + self.b > self.a :
             return "Szerkeszthető!", Háromszög.ker(self), Háromszög.ter(self), Háromszög.kör(self)
+        
         else:
-            return "Nem szerkeszthető igy nincs semmije."                                                        
+            return Háromszög.nemszerk(self)      
+                                                      
 f = open("eredmény.txt","w",encoding="UTF-8")   
 
 háromszög = Háromszög()
@@ -53,10 +59,10 @@ for i in Lista[0]:
     új.append((i))
 
 print(új)
-kerület = új[1]
+tipus = type(háromszög.szerk())
 
 
-if kerület > 0:
-    f.write("Szerkeszthető" +"\n"+ str(új[1]) + "\n" + str(új[2]) + "\n" + str(új[3]))
-else:
+if tipus != str :
+    f.write("Szerkeszthető" +"\n"+ "Kerület: " + str(új[1]) + "\n" + "Terület: " + str(új[2]) + "\n" + str(új[3]))
+elif tipus == str:
     f.write("Nem szerkeszthető")

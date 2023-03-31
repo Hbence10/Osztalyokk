@@ -1,0 +1,4 @@
+Szerkeszthető
+Kerület: 19
+Terület: 14.981238266578634
+('A belső kör sugara: ', 1.58)
