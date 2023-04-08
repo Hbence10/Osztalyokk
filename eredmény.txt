@@ -1,4 +1,4 @@
 Szerkeszthető
-Kerület: 19
-Terület: 14.981238266578634
-('A belső kör sugara: ', 1.58)
+Kerület: 12
+Terület: 6.0
+Nincs belső köre mivel ez egy derékszögű háromszög és azoknál csak köré lehet irni

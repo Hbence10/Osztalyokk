@@ -63,6 +63,6 @@ tipus = type(háromszög.szerk())
 
 
 if tipus != str :
-    f.write("Szerkeszthető" +"\n"+ "Kerület: " + str(új[1]) + "\n" + "Terület: " + str(új[2]) + "\n" + str(új[3]))
+    f.write("Szerkeszthető!" +"\n"+ "Kerület: " + str(új[1]) + "\n" + "Terület: " + str(új[2]) + "\n" + str(új[3]))
 elif tipus == str:
     f.write("Nem szerkeszthető")
